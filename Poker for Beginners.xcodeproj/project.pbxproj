@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CD701BA21FA2598200BE62FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BA11FA2598200BE62FA /* AppDelegate.swift */; };
-		CD701BA41FA2598200BE62FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BA31FA2598200BE62FA /* ViewController.swift */; };
 		CD701BA71FA2598200BE62FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD701BA51FA2598200BE62FA /* Main.storyboard */; };
 		CD701BA91FA2598200BE62FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD701BA81FA2598200BE62FA /* Assets.xcassets */; };
 		CD701BAC1FA2598200BE62FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD701BAA1FA2598200BE62FA /* LaunchScreen.storyboard */; };
 		CD701BB71FA2598200BE62FA /* Poker_for_BeginnersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BB61FA2598200BE62FA /* Poker_for_BeginnersTests.swift */; };
 		CD701BC21FA2598200BE62FA /* Poker_for_BeginnersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BC11FA2598200BE62FA /* Poker_for_BeginnersUITests.swift */; };
+		CD701BD41FA2613F00BE62FA /* CardHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BD31FA2613F00BE62FA /* CardHomeViewController.swift */; };
+		CD701BD61FA26E4F00BE62FA /* CardSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BD51FA26E4F00BE62FA /* CardSelectViewController.swift */; };
+		CD701BD81FA26E6C00BE62FA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BD71FA26E6C00BE62FA /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		CD701B9E1FA2598200BE62FA /* Poker for Beginners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker for Beginners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD701BA11FA2598200BE62FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD701BA31FA2598200BE62FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD701BA61FA2598200BE62FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD701BA81FA2598200BE62FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD701BAB1FA2598200BE62FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		CD701BBD1FA2598200BE62FA /* Poker for BeginnersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poker for BeginnersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD701BC11FA2598200BE62FA /* Poker_for_BeginnersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poker_for_BeginnersUITests.swift; sourceTree = "<group>"; };
 		CD701BC31FA2598200BE62FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD701BD31FA2613F00BE62FA /* CardHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardHomeViewController.swift; sourceTree = "<group>"; };
+		CD701BD51FA26E4F00BE62FA /* CardSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSelectViewController.swift; sourceTree = "<group>"; };
+		CD701BD71FA26E6C00BE62FA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		CD701BA01FA2598200BE62FA /* Poker for Beginners */ = {
 			isa = PBXGroup;
 			children = (
+				CD701BD31FA2613F00BE62FA /* CardHomeViewController.swift */,
+				CD701BD51FA26E4F00BE62FA /* CardSelectViewController.swift */,
+				CD701BD71FA26E6C00BE62FA /* ResultsViewController.swift */,
 				CD701BA11FA2598200BE62FA /* AppDelegate.swift */,
-				CD701BA31FA2598200BE62FA /* ViewController.swift */,
 				CD701BA51FA2598200BE62FA /* Main.storyboard */,
 				CD701BA81FA2598200BE62FA /* Assets.xcassets */,
 				CD701BAA1FA2598200BE62FA /* LaunchScreen.storyboard */,
@@ -262,8 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD701BA41FA2598200BE62FA /* ViewController.swift in Sources */,
+				CD701BD41FA2613F00BE62FA /* CardHomeViewController.swift in Sources */,
 				CD701BA21FA2598200BE62FA /* AppDelegate.swift in Sources */,
+				CD701BD61FA26E4F00BE62FA /* CardSelectViewController.swift in Sources */,
+				CD701BD81FA26E6C00BE62FA /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-Beginners";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -436,6 +445,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-Beginners";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
