@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD701BA21FA2598200BE62FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BA11FA2598200BE62FA /* AppDelegate.swift */; };
+		CD701BA41FA2598200BE62FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BA31FA2598200BE62FA /* ViewController.swift */; };
+		CD701BA71FA2598200BE62FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD701BA51FA2598200BE62FA /* Main.storyboard */; };
+		CD701BA91FA2598200BE62FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD701BA81FA2598200BE62FA /* Assets.xcassets */; };
+		CD701BAC1FA2598200BE62FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD701BAA1FA2598200BE62FA /* LaunchScreen.storyboard */; };
+		CD701BB71FA2598200BE62FA /* Poker_for_BeginnersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BB61FA2598200BE62FA /* Poker_for_BeginnersTests.swift */; };
+		CD701BC21FA2598200BE62FA /* Poker_for_BeginnersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD701BC11FA2598200BE62FA /* Poker_for_BeginnersUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD701BB31FA2598200BE62FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD701B961FA2598200BE62FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD701B9D1FA2598200BE62FA;
+			remoteInfo = "Poker for Beginners";
+		};
+		CD701BBE1FA2598200BE62FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD701B961FA2598200BE62FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD701B9D1FA2598200BE62FA;
+			remoteInfo = "Poker for Beginners";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD701B9E1FA2598200BE62FA /* Poker for Beginners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poker for Beginners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD701BA11FA2598200BE62FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD701BA31FA2598200BE62FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD701BA61FA2598200BE62FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD701BA81FA2598200BE62FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD701BAB1FA2598200BE62FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD701BAD1FA2598200BE62FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD701BB21FA2598200BE62FA /* Poker for BeginnersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poker for BeginnersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD701BB61FA2598200BE62FA /* Poker_for_BeginnersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poker_for_BeginnersTests.swift; sourceTree = "<group>"; };
+		CD701BB81FA2598200BE62FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD701BBD1FA2598200BE62FA /* Poker for BeginnersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poker for BeginnersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD701BC11FA2598200BE62FA /* Poker_for_BeginnersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poker_for_BeginnersUITests.swift; sourceTree = "<group>"; };
+		CD701BC31FA2598200BE62FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD701B9B1FA2598200BE62FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BAF1FA2598200BE62FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BBA1FA2598200BE62FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD701B951FA2598200BE62FA = {
+			isa = PBXGroup;
+			children = (
+				CD701BA01FA2598200BE62FA /* Poker for Beginners */,
+				CD701BB51FA2598200BE62FA /* Poker for BeginnersTests */,
+				CD701BC01FA2598200BE62FA /* Poker for BeginnersUITests */,
+				CD701B9F1FA2598200BE62FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD701B9F1FA2598200BE62FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD701B9E1FA2598200BE62FA /* Poker for Beginners.app */,
+				CD701BB21FA2598200BE62FA /* Poker for BeginnersTests.xctest */,
+				CD701BBD1FA2598200BE62FA /* Poker for BeginnersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD701BA01FA2598200BE62FA /* Poker for Beginners */ = {
+			isa = PBXGroup;
+			children = (
+				CD701BA11FA2598200BE62FA /* AppDelegate.swift */,
+				CD701BA31FA2598200BE62FA /* ViewController.swift */,
+				CD701BA51FA2598200BE62FA /* Main.storyboard */,
+				CD701BA81FA2598200BE62FA /* Assets.xcassets */,
+				CD701BAA1FA2598200BE62FA /* LaunchScreen.storyboard */,
+				CD701BAD1FA2598200BE62FA /* Info.plist */,
+			);
+			path = "Poker for Beginners";
+			sourceTree = "<group>";
+		};
+		CD701BB51FA2598200BE62FA /* Poker for BeginnersTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD701BB61FA2598200BE62FA /* Poker_for_BeginnersTests.swift */,
+				CD701BB81FA2598200BE62FA /* Info.plist */,
+			);
+			path = "Poker for BeginnersTests";
+			sourceTree = "<group>";
+		};
+		CD701BC01FA2598200BE62FA /* Poker for BeginnersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD701BC11FA2598200BE62FA /* Poker_for_BeginnersUITests.swift */,
+				CD701BC31FA2598200BE62FA /* Info.plist */,
+			);
+			path = "Poker for BeginnersUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD701B9D1FA2598200BE62FA /* Poker for Beginners */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD701BC61FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for Beginners" */;
+			buildPhases = (
+				CD701B9A1FA2598200BE62FA /* Sources */,
+				CD701B9B1FA2598200BE62FA /* Frameworks */,
+				CD701B9C1FA2598200BE62FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poker for Beginners";
+			productName = "Poker for Beginners";
+			productReference = CD701B9E1FA2598200BE62FA /* Poker for Beginners.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD701BB11FA2598200BE62FA /* Poker for BeginnersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD701BC91FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for BeginnersTests" */;
+			buildPhases = (
+				CD701BAE1FA2598200BE62FA /* Sources */,
+				CD701BAF1FA2598200BE62FA /* Frameworks */,
+				CD701BB01FA2598200BE62FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD701BB41FA2598200BE62FA /* PBXTargetDependency */,
+			);
+			name = "Poker for BeginnersTests";
+			productName = "Poker for BeginnersTests";
+			productReference = CD701BB21FA2598200BE62FA /* Poker for BeginnersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD701BBC1FA2598200BE62FA /* Poker for BeginnersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD701BCC1FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for BeginnersUITests" */;
+			buildPhases = (
+				CD701BB91FA2598200BE62FA /* Sources */,
+				CD701BBA1FA2598200BE62FA /* Frameworks */,
+				CD701BBB1FA2598200BE62FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD701BBF1FA2598200BE62FA /* PBXTargetDependency */,
+			);
+			name = "Poker for BeginnersUITests";
+			productName = "Poker for BeginnersUITests";
+			productReference = CD701BBD1FA2598200BE62FA /* Poker for BeginnersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD701B961FA2598200BE62FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "E&M";
+				TargetAttributes = {
+					CD701B9D1FA2598200BE62FA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P6496GJCUZ;
+						ProvisioningStyle = Automatic;
+					};
+					CD701BB11FA2598200BE62FA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P6496GJCUZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD701B9D1FA2598200BE62FA;
+					};
+					CD701BBC1FA2598200BE62FA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P6496GJCUZ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CD701B9D1FA2598200BE62FA;
+					};
+				};
+			};
+			buildConfigurationList = CD701B991FA2598200BE62FA /* Build configuration list for PBXProject "Poker for Beginners" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD701B951FA2598200BE62FA;
+			productRefGroup = CD701B9F1FA2598200BE62FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD701B9D1FA2598200BE62FA /* Poker for Beginners */,
+				CD701BB11FA2598200BE62FA /* Poker for BeginnersTests */,
+				CD701BBC1FA2598200BE62FA /* Poker for BeginnersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD701B9C1FA2598200BE62FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD701BAC1FA2598200BE62FA /* LaunchScreen.storyboard in Resources */,
+				CD701BA91FA2598200BE62FA /* Assets.xcassets in Resources */,
+				CD701BA71FA2598200BE62FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BB01FA2598200BE62FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BBB1FA2598200BE62FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD701B9A1FA2598200BE62FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD701BA41FA2598200BE62FA /* ViewController.swift in Sources */,
+				CD701BA21FA2598200BE62FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BAE1FA2598200BE62FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD701BB71FA2598200BE62FA /* Poker_for_BeginnersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD701BB91FA2598200BE62FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD701BC21FA2598200BE62FA /* Poker_for_BeginnersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD701BB41FA2598200BE62FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD701B9D1FA2598200BE62FA /* Poker for Beginners */;
+			targetProxy = CD701BB31FA2598200BE62FA /* PBXContainerItemProxy */;
+		};
+		CD701BBF1FA2598200BE62FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD701B9D1FA2598200BE62FA /* Poker for Beginners */;
+			targetProxy = CD701BBE1FA2598200BE62FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD701BA51FA2598200BE62FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD701BA61FA2598200BE62FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD701BAA1FA2598200BE62FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD701BAB1FA2598200BE62FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD701BC41FA2598200BE62FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD701BC51FA2598200BE62FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD701BC71FA2598200BE62FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for Beginners/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-Beginners";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD701BC81FA2598200BE62FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for Beginners/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-Beginners";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CD701BCA1FA2598200BE62FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for BeginnersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-BeginnersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poker for Beginners.app/Poker for Beginners";
+			};
+			name = Debug;
+		};
+		CD701BCB1FA2598200BE62FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for BeginnersTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-BeginnersTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poker for Beginners.app/Poker for Beginners";
+			};
+			name = Release;
+		};
+		CD701BCD1FA2598200BE62FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for BeginnersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-BeginnersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Poker for Beginners";
+			};
+			name = Debug;
+		};
+		CD701BCE1FA2598200BE62FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = P6496GJCUZ;
+				INFOPLIST_FILE = "Poker for BeginnersUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "E-M.Poker-for-BeginnersUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Poker for Beginners";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD701B991FA2598200BE62FA /* Build configuration list for PBXProject "Poker for Beginners" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD701BC41FA2598200BE62FA /* Debug */,
+				CD701BC51FA2598200BE62FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD701BC61FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for Beginners" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD701BC71FA2598200BE62FA /* Debug */,
+				CD701BC81FA2598200BE62FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD701BC91FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for BeginnersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD701BCA1FA2598200BE62FA /* Debug */,
+				CD701BCB1FA2598200BE62FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD701BCC1FA2598200BE62FA /* Build configuration list for PBXNativeTarget "Poker for BeginnersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD701BCD1FA2598200BE62FA /* Debug */,
+				CD701BCE1FA2598200BE62FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD701B961FA2598200BE62FA /* Project object */;
+}
