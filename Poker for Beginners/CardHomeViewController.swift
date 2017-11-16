@@ -9,6 +9,7 @@
 import UIKit
 
 class CardHomeViewController: UIViewController {
+    struct Data {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,9 @@ class CardHomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onCardPress(_ sender: UIButton) {
+        performSegue(withIdentifier: "cardSelectSegue", sender: self)
+    }
     @IBAction func onResultsButtonPress(_ sender: UIButton) {
         performSegue(withIdentifier: "resultsViewSegue", sender: self)
     }
@@ -28,14 +32,7 @@ class CardHomeViewController: UIViewController {
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
-
 }
