@@ -17,7 +17,7 @@ class CardSelectViewController: UIViewController, UIPickerViewDelegate, UIPicker
     private let suitType = ["Diamond", "Heart", "Club", "Spade"]
     var rank = 0
     var suit = 0
-    var rankSuit : Array<Any>!
+    var rankSuit = ["None", "None"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,8 +66,10 @@ class CardSelectViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        rankSuit = [rankType[rank], suitType[suit]]
+        if let sender = sender as? UIBarButtonItem {
+            if sender.title == "Select" {
+                rankSuit = [rankType[rank], String(suit)]
+            } 
+        }
     }
-
-
 }

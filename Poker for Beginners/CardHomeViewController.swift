@@ -10,10 +10,18 @@ import UIKit
 
 class CardHomeViewController: UIViewController {
     var senderButtonID = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+//        var pc0 = ""
+//        var pc1 = ""
+//        var dc0 = ""
+//        var dc1 = ""
+//        var dc2 = ""
+//        var dc3 = ""
+//        var dc4 = ""
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +33,6 @@ class CardHomeViewController: UIViewController {
         // Change to the CardSelectViewController page
         performSegue(withIdentifier: "cardSelectSegue", sender: self)
         senderButtonID = sender
-        NSLog(String(describing: sender))
     }
     @IBAction func onResultsButtonPress(_ sender: UIButton) {
         // Change to the ResultsViewController page
@@ -35,9 +42,10 @@ class CardHomeViewController: UIViewController {
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         if let returnedData = unwindSegue.source as? CardSelectViewController{
             //Display the returned data.  Stored as [rank, suit] both strings
-            NSLog("Rank: " + String(describing: returnedData.rankSuit[0]) + ", Suit: " + String(describing: returnedData.rankSuit[1]))
             let rankSuit = returnedData.rankSuit
-            changeButtonPicture(suitRank: rankSuit!, senderButtonId: senderButtonID)
+            if (rankSuit[0] != "None") {
+                changeButtonPicture(rankSuit: rankSuit, senderButtonId: senderButtonID)
+            }
         }
     }
     
@@ -48,7 +56,13 @@ class CardHomeViewController: UIViewController {
 //        }
     }
     
-    func changeButtonPicture (suitRank: Array<Any>, senderButtonId: UIButton){
-        senderButtonID.setImage(UIImage(named: "cards1600"), for: .normal)
+    func changeButtonPicture (rankSuit: Array<Any>, senderButtonId: UIButton){
+        let suits = ["D", "H", "C", "S"]
+        if let rankSuit = rankSuit as? Array<String> {
+            let imageName = rankSuit[0] + suits[Int(rankSuit[1])!]
+            NSLog(imageName)
+            senderButtonID.setBackgroundImage(UIImage(named: imageName), for: .normal)
+            NSLog(senderButtonID.restorationIdentifier!)
+        }
     }
 }
