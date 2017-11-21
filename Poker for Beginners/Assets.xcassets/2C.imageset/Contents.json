@@ -4,19 +4,19 @@
       "resizing" : {
         "mode" : "9-part",
         "center" : {
-          "mode" : "tile",
+          "mode" : "stretch",
           "width" : 1,
           "height" : 1
         },
         "cap-insets" : {
-          "bottom" : 13,
-          "top" : 12,
-          "right" : 14,
-          "left" : 14
+          "bottom" : 6,
+          "top" : 6,
+          "right" : 6,
+          "left" : 6
         }
       },
       "idiom" : "universal",
-      "filename" : "blueButton copy.png",
+      "filename" : "2C.jpg",
       "scale" : "1x"
     },
     {
@@ -31,5 +31,8 @@
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "original"
   }
 }

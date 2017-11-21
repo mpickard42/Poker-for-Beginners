@@ -24,8 +24,8 @@ class CardHomeViewController: UIViewController {
     @IBAction func onCardPress(_ sender: UIButton) {
         // Change to the CardSelectViewController page
         performSegue(withIdentifier: "cardSelectSegue", sender: self)
-        senderButtonID = sender
-        NSLog(String(describing: sender))
+//        senderButtonID = sender
+//        NSLog(String(describing: sender))
     }
     @IBAction func onResultsButtonPress(_ sender: UIButton) {
         // Change to the ResultsViewController page
@@ -37,7 +37,9 @@ class CardHomeViewController: UIViewController {
             //Display the returned data.  Stored as [rank, suit] both strings
             NSLog("Rank: " + String(describing: returnedData.rankSuit[0]) + ", Suit: " + String(describing: returnedData.rankSuit[1]))
             let rankSuit = returnedData.rankSuit
-            changeButtonPicture(suitRank: rankSuit!, senderButtonId: senderButtonID)
+            if (rankSuit[0] != "None") {
+                changeButtonPicture(rankSuit: rankSuit, senderButtonId: senderButtonID)
+            }
         }
     }
     
@@ -48,7 +50,9 @@ class CardHomeViewController: UIViewController {
 //        }
     }
     
-    func changeButtonPicture (suitRank: Array<Any>, senderButtonId: UIButton){
-        senderButtonID.setImage(UIImage(named: "cards1600"), for: .normal)
+    func changeButtonPicture (rankSuit: Array<String?>, senderButtonId: UIButton){
+        NSLog("In Function")
+        NSLog(String(describing: senderButtonID))
+        senderButtonID.setBackgroundImage(UIImage(named: "blueButton copy"), for: .normal)
     }
 }
