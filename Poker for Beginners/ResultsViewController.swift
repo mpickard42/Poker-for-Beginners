@@ -9,10 +9,11 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    var cards : Array<Card>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NSLog(String(cards![0].cardValue))
         // Do any additional setup after loading the view.
     }
 
