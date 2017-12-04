@@ -41,6 +41,13 @@ class CardHomeViewController: UIViewController {
     var dc4 : Card?
     var cardsToPass : Array<Card> = []
     
+    @IBOutlet weak var pc0Bttn: UIButton!
+    @IBOutlet weak var pc1Bttn: UIButton!
+    @IBOutlet weak var dc2Bttn: UIButton!
+    @IBOutlet weak var dc3Bttn: UIButton!
+    @IBOutlet weak var dc4Bttn: UIButton!
+    @IBOutlet weak var dc0Bttn: UIButton!
+    @IBOutlet weak var dc1Bttn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,12 +70,12 @@ class CardHomeViewController: UIViewController {
         var failMessage = ""
         
         //Are first two cards selected
-        if(pc0?.cardValue == nil || pc1?.cardValue == nil){
+        if(pc0?.cardValue == nil || pc1?.cardValue == nil || pc0?.cardValue == 0 || pc1?.cardValue == 0){
             failMessage = "You must select your cards"
             pass = 0
         }else { //Move non nil cards into cardsToPass
             for i in 0 ..< cards.count {
-                if cards[i] != nil {
+                if cards[i] != nil && cards[i]?.cardValue != 0 {
                     cardsToPass.append(cards[i]!)
                 }
             }
@@ -131,6 +138,19 @@ class CardHomeViewController: UIViewController {
         }
     }
     
+    @IBAction func clearCards(_ sender: Any) {
+        let cardButtons = [pc0Bttn,pc1Bttn,dc0Bttn,dc1Bttn,dc2Bttn,dc3Bttn,dc4Bttn]
+        for bttn in cardButtons {
+            bttn?.setBackgroundImage(UIImage(named: "whiteButton copy"), for:.normal)
+        }
+        pc0?.cardValue = 0
+        pc1?.cardValue = 0
+        dc0?.cardValue = 0
+        dc1?.cardValue = 0
+        dc2?.cardValue = 0
+        dc3?.cardValue = 0
+        dc4?.cardValue = 0
+    }
     func saveCard(rankSuit: Array<Any>, senderButtonId: UIButton) {
         if let rankSuit = rankSuit as? Array<String> {
             var rankInt = 0
