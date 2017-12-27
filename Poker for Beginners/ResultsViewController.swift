@@ -93,45 +93,45 @@ class ResultsViewController: UIViewController {
         }
         
         if(winningValue == 8576012){
-            resultsLabel.text = "Royal Flush"
-            royalFlushLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.000154%"
+            resultsLabel.text = "Best Hand: Royal Flush"
+            royalFlushLabel.textColor = UIColor.red
+            probabilityLabel.text = "The best possible straight flush which consists of the ace, king, queen, jack and ten of a suit. A royal flush is an unbeatable hand."
         }else if(winningValue >= 8000000) {
-            resultsLabel.text = "Straight Flush"
-            straightFlushLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.00139%"
+            resultsLabel.text = "Best Hand: Straight Flush"
+            straightFlushLabel.textColor = UIColor.red
+            probabilityLabel.text = "Five cards in numerical order, all of identical suits. In the event of a tie: Highest rank at the top of the sequence wins."
         }else if(winningValue >= 7000000) {
-            resultsLabel.text = "Four of a Kind"
-            fourOfAKindLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.0240%"
+            resultsLabel.text = "Best Hand: Four of a Kind"
+            fourOfAKindLabel.textColor = UIColor.red
+            probabilityLabel.text = "Four cards of the same rank, and one side card or ‘kicker’. In the event of a tie: Highest four of a kind wins."
         }else if(winningValue >= 6000000) {
-            resultsLabel.text = "Full House"
-            fullHouseLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.1441%"
+            resultsLabel.text = "Best Hand: Full House"
+            fullHouseLabel.textColor = UIColor.red
+            probabilityLabel.text = "Three cards of the same rank, and two cards of a different, matching rank. In the event of a tie: Highest three matching cards wins the pot."
         }else if(winningValue >= 5000000) {
-            resultsLabel.text = "Flush"
-            flushLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.1965%"
+            resultsLabel.text = "Best Hand: Flush"
+            flushLabel.textColor = UIColor.red
+            probabilityLabel.text = "Five cards of the same suit. In the event of a tie: The player holding the highest ranked card wins. If necessary, the second-highest, third-highest, fourth-highest, and fifth-highest cards can be used to break the tie. If all five cards are the same ranks, the pot is split."
         }else if(winningValue >= 4000000) {
-            resultsLabel.text = "Straight"
-            straightLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "0.3925%"
+            resultsLabel.text = "Best Hand: Straight"
+            straightLabel.textColor = UIColor.red
+            probabilityLabel.text = "Five cards in sequence. In the event of a tie: Highest ranking card at the top of the sequence wins."
         }else if(winningValue >= 3000000) {
-            resultsLabel.text = "Three of a Kind"
-            threeOfAKindLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "2.1128%"
+            resultsLabel.text = "Best Hand: Three of a Kind"
+            threeOfAKindLabel.textColor = UIColor.red
+            probabilityLabel.text = "Three cards of the same rank, and two unrelated side cards. In the event of a tie: Highest ranking three of a kind wins."
         }else if(winningValue >= 2000000) {
-            resultsLabel.text = "Two Pair"
-            twoPairLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "4.7539%"
+            resultsLabel.text = "Best Hand: Two Pair"
+            twoPairLabel.textColor = UIColor.red
+            probabilityLabel.text = "Two cards of a matching rank, another two cards of a different matching rank, and one side card. In the event of a tie: Highest pair wins. If players have the same highest pair, highest second pair wins. If both players have two identical pairs, highest side card wins."
         }else if(winningValue >= 1000000) {
-            resultsLabel.text = "One Pair"
-            onePairLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "42.2569%"
+            resultsLabel.text = "Best Hand: One Pair"
+            onePairLabel.textColor = UIColor.red
+            probabilityLabel.text = "Two cards of a matching rank, and three unrelated side cards. In the event of a tie: Highest pair wins. If players have the same pair, the highest side card wins, and if necessary, the second-highest and third-highest side card can be used to break the tie."
         }else {
-            resultsLabel.text = "High Card"
-            highCardLabel.font = UIFont.boldSystemFont(ofSize: 17)
-            probabilityLabel.text = "50.1177%"
+            resultsLabel.text = "Best Hand: High Card"
+            highCardLabel.textColor = UIColor.red
+            probabilityLabel.text = "Any hand that does not qualify under another category. In the event of a tie: Highest card wins, and if necessary, the second-highest, third-highest, fourth-highest and smallest card can be used to break the tie."
         }
         
         displayImages(winningHand:winningHand!)
