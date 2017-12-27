@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card Home View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CardHomeViewController" customModule="Poker_for_Beginners" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,7 +33,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onResultsButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cRB-A7-PF5"/>
-                                    <segue destination="tf6-Iu-Wby" kind="presentation" identifier="resultsViewSegue" id="Via-lH-guo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Cards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBk-O3-25M">
@@ -48,18 +47,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM4-os-h8B">
+=======
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="pc0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TM4-os-h8B">
+>>>>>>> 825787cebe5929299a85d9f6daf14ba6e10280da
                                 <rect key="frame" x="107" y="140" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="o5Y-qT-TdL"/>
                                     <constraint firstAttribute="height" constant="94" id="vGj-Dc-43w"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="whiteButton copy"/>
+                                <state key="normal" backgroundImage="whiteButton copy">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <state key="disabled">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
                                 <connections>
                                     <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDh-Zo-XD0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn6-D4-pM5">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="pc1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn6-D4-pM5">
                                 <rect key="frame" x="206" y="140" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="Hho-qO-UQE"/>
@@ -70,46 +78,68 @@
                                     <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCE-OI-MV4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-od-H9C">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dc0" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Hn-od-H9C">
                                 <rect key="frame" x="107" y="348" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="8nb-7w-2c2"/>
                                     <constraint firstAttribute="width" constant="67" id="a6H-YJ-GOS"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="whiteButton copy"/>
+                                <connections>
+                                    <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdk-Ve-gF9"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EN-8L-J1c">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dc1" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EN-8L-J1c">
                                 <rect key="frame" x="206" y="348" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="fCF-zU-h5O"/>
                                     <constraint firstAttribute="width" constant="67" id="zoP-Ux-i0G"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="whiteButton copy"/>
+                                <connections>
+                                    <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Krb-pZ-BMo"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-Kw-HBq">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dc3" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVr-Kw-HBq">
                                 <rect key="frame" x="154" y="457" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="XKO-UB-5u2"/>
                                     <constraint firstAttribute="width" constant="67" id="s2Q-6f-9LP"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="whiteButton copy"/>
+                                <connections>
+                                    <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2zf-nq-bjn"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-bi-VQs">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dc4" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-bi-VQs">
                                 <rect key="frame" x="254" y="457" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="5hL-Sk-sqP"/>
                                     <constraint firstAttribute="width" constant="67" id="bQS-h2-P3b"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="whiteButton copy"/>
+                                <connections>
+                                    <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWc-Qb-JdJ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-WM-mF2">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="dc2" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-WM-mF2">
                                 <rect key="frame" x="49" y="457" width="67" height="94"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="94" id="tP2-ST-H6e"/>
                                     <constraint firstAttribute="width" constant="67" id="vGL-Ut-fhX"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="whiteButton copy"/>
+                                <connections>
+                                    <action selector="onCardPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a5P-rq-MYz"/>
+                                </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQT-wi-Z7Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="fUl-A6-ibR"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -154,14 +184,15 @@
                             <constraint firstItem="cn6-D4-pM5" firstAttribute="baseline" secondItem="TM4-os-h8B" secondAttribute="baseline" id="zAG-ie-S8L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JaD-xC-kmK"/>
+                    <navigationItem key="navigationItem" title="Home" id="JaD-xC-kmK"/>
                     <connections>
                         <segue destination="4Yz-Xz-JWf" kind="presentation" identifier="cardSelectSegue" id="rq2-YS-0Uq"/>
+                        <segue destination="tf6-Iu-Wby" kind="presentation" identifier="resultsViewSegue" id="1iE-ec-Gco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1348" y="-612.14392803598207"/>
+            <point key="canvasLocation" x="-1330" y="-612"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="foI-E5-2hw">
@@ -261,23 +292,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Celebration-celebrate-images-clip-art" translatesAutoresizingMaskIntoConstraints="NO" id="1TX-Ul-HGb">
-                                <rect key="frame" x="-1313" y="-824.5" width="3000" height="2315"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9l-q9-cJM">
                                 <rect key="frame" x="144" y="334" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <segue destination="dVc-L2-bz7" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="Weg-se-2NB"/>
+                                    <segue destination="dVc-L2-bz7" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="B6i-oY-HC7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1TX-Ul-HGb" firstAttribute="centerY" secondItem="2ZG-a3-mAT" secondAttribute="centerY" id="LA5-aS-2sv"/>
-                            <constraint firstItem="1TX-Ul-HGb" firstAttribute="centerX" secondItem="2ZG-a3-mAT" secondAttribute="centerX" id="i9V-V7-mRa"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMR-ch-dz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -287,7 +311,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Celebration-celebrate-images-clip-art" width="3000" height="2315"/>
         <image name="whiteButton copy" width="29" height="38"/>
     </resources>
 </document>

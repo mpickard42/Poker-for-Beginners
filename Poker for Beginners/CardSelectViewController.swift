@@ -68,10 +68,13 @@ class CardSelectViewController: UIViewController, UIPickerViewDelegate, UIPicker
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let sender = sender as? UIBarButtonItem {
             if sender.title == "Select" {
+<<<<<<< HEAD
                 rankSuit = [rankType[rank], suitType[suit]]
             }
+=======
+                rankSuit = [rankType[rank], String(suit)]
+            } 
+>>>>>>> 825787cebe5929299a85d9f6daf14ba6e10280da
         }
     }
-
-
 }
